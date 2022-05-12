@@ -1,0 +1,98 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+	font-family: pixelFont;
+	src: url(pixEmu.ttf);
+}
+
+@font-face {
+	font-family: arialRound;
+	src: url(ARLRDBD.ttf);
+}
+
+body {
+	margin: 0;
+}
+
+div {
+	font-family: arialRound;
+}
+
+p {
+	padding: 2rem;
+	color: yellow;
+	overflow: auto;
+}
+
+div.nav_bar {
+	overflow: hidden;
+	z-index: 5;
+	margin: 0;
+	width: 100%;
+	height: 5.25rem;
+	position: fixed;
+	background-color: #f03f3f;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	box-shadow:  0 7px 15px #a82c2c;
+}
+
+audio {
+	color: yellow;
+	text-decoration: none;
+	border-radius: 15px;
+	background: #f03f3f;
+	margin: 1rem 1rem;
+	padding: .5rem;
+	height: 2rem;
+	transition: .5s;
+	float: left;
+	box-shadow:  -7px 7px 15px #a82c2c,
+				 7px -7px 15px #ff5252;
+}
+
+div.nav_bar a {
+	color: yellow;
+	text-decoration: none;
+	border-radius: 15px;
+	background: #f03f3f;
+	font-size: 1rem;
+	margin: 1rem 1rem;
+	padding: 1rem 1rem;
+	transition: .5s;
+}
+
+div.nav_bar a:hover {
+	padding: .72rem 2rem;
+	font-size: 1.5em;
+}
+
+div.nav_bar a.toleft {
+	float: left;
+	box-shadow:  -7px 7px 15px #a82c2c,
+             7px -7px 15px #ff5252;
+}
+
+div.nav_bar a.toleft:active {
+	box-shadow: inset -7px 7px 15px #a82c2c,
+				inset 7px -7px 15px #ff5252;
+}
+
+div.nav_bar a.toright {
+	float: right;
+	box-shadow:  7px 7px 15px #a82c2c,
+				-7px -7px 15px #ff5252;
+}
+
+div.nav_bar a.toright:active {
+	box-shadow: inset 7px 7px 15px #a82c2c,
+				inset -7px -7px 15px #ff5252;
+}
+
+div.nav_bar audio {
+	float: left;
+	box-shadow:  0px 7px 15px #a82c2c,
+				 0px -7px 15px #ff5252;
+}
